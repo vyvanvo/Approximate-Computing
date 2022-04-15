@@ -1,0 +1,8 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/yvvan/Documents/Research/Approximate Computing/MAC_array/MAC_array.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/yvvan/Documents/Research/Approximate Computing/MAC_array/MAC_array.srcs/sim_1/new/MAC_array_tb.v,1649920442,verilog,,,,MAC_array_tb,,,,,,,,
+C:/Users/yvvan/Documents/Research/Approximate Computing/MAC_array/MAC_array.srcs/sources_1/new/MAC_array.v,1649920197,verilog,,C:/Users/yvvan/Documents/Research/Approximate Computing/MAC_array/MAC_array.srcs/sources_1/new/MAC_unit.v,C:/Users/yvvan/Documents/Research/Approximate Computing/MAC_array/MAC_array.srcs/sources_1/new/MAC_unit.v,MAC_array,,,,,,,,
+C:/Users/yvvan/Documents/Research/Approximate Computing/MAC_array/MAC_array.srcs/sources_1/new/MAC_unit.v,1649747300,verilog,,C:/Users/yvvan/Documents/Research/Approximate Computing/MAC_array/MAC_array.srcs/sim_1/new/MAC_array_tb.v,,MAC_unit;register,,,,,,,,

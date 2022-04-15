@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MAC_array_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MAC_array_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="100000001fs"></ZoomEndTime>
+      <Cursor1Time time="93000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="289"></NameColumnWidth>
+      <ValueColumnWidth column_width="287"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/MAC_array_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MAC_array_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MAC_array_tb/ain1" type="array">
+      <obj_property name="ElementShortName">ain1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MAC_array_tb/ain2" type="array">
+      <obj_property name="ElementShortName">ain2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MAC_array_tb/win1" type="array">
+      <obj_property name="ElementShortName">win1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MAC_array_tb/win2" type="array">
+      <obj_property name="ElementShortName">win2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MAC_array_tb/sout11" type="array">
+      <obj_property name="ElementShortName">sout11[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout11[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MAC_array_tb/sout12" type="array">
+      <obj_property name="ElementShortName">sout12[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout12[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MAC_array_tb/sout21" type="array">
+      <obj_property name="ElementShortName">sout21[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout21[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MAC_array_tb/sout22" type="array">
+      <obj_property name="ElementShortName">sout22[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout22[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
