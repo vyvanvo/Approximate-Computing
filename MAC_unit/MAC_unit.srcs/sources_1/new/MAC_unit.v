@@ -44,7 +44,7 @@ module register (clk, rst, write_en, data_in, data_out
     
 endmodule
 
-module MAC_unit(
+module mac_unit(
     input clk,
     input rst,
     input [7:0] ain, //operand

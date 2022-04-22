@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module MAC_unit_tb(
+module mac_unit_tb(
     );
     
     reg clk, rst;
@@ -28,7 +28,7 @@ module MAC_unit_tb(
     wire [7:0] aout, wout;
     wire [16:0] sout;
     
-    MAC_unit DUT(.clk(clk), .rst(rst), .ain(ain), .win(win), .aout(aout), .wout(wout), .sout(sout));
+    mac_unit DUT(.clk(clk), .rst(rst), .ain(ain), .win(win), .aout(aout), .wout(wout), .sout(sout));
     
     initial begin
         clk = 1;
