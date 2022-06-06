@@ -1,0 +1,7 @@
+Running: xsim.dir/mac_array_48x48_tb_behav/xsimk.exe -simmode gui -wdb mac_array_48x48_tb_behav.wdb -simrunnum 0 -socket 62035
+Design successfully loaded
+Design Loading Memory Usage: 18656 KB (Peak: 18656 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 25352 KB (Peak: 25352 KB)
+Simulation CPU Usage: 671 ms

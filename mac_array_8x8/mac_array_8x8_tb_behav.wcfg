@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mac_array_8x8_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mac_array_8x8_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="610577707fs"></ZoomEndTime>
+      <Cursor1Time time="700000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="289"></NameColumnWidth>
+      <ValueColumnWidth column_width="215"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="96" />
+   <wvobject fp_name="/mac_array_8x8_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/ain1" type="array">
+      <obj_property name="ElementShortName">ain1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/ain2" type="array">
+      <obj_property name="ElementShortName">ain2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/ain3" type="array">
+      <obj_property name="ElementShortName">ain3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/ain4" type="array">
+      <obj_property name="ElementShortName">ain4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain4[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/ain5" type="array">
+      <obj_property name="ElementShortName">ain5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain5[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/ain6" type="array">
+      <obj_property name="ElementShortName">ain6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain6[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/ain7" type="array">
+      <obj_property name="ElementShortName">ain7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/ain8" type="array">
+      <obj_property name="ElementShortName">ain8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain8[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/win1" type="array">
+      <obj_property name="ElementShortName">win1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/win2" type="array">
+      <obj_property name="ElementShortName">win2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/win3" type="array">
+      <obj_property name="ElementShortName">win3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/win4" type="array">
+      <obj_property name="ElementShortName">win4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win4[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/win5" type="array">
+      <obj_property name="ElementShortName">win5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win5[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/win6" type="array">
+      <obj_property name="ElementShortName">win6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win6[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/win7" type="array">
+      <obj_property name="ElementShortName">win7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/win8" type="array">
+      <obj_property name="ElementShortName">win8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win8[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout11" type="array">
+      <obj_property name="ElementShortName">sout11[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout11[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout12" type="array">
+      <obj_property name="ElementShortName">sout12[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout12[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout13" type="array">
+      <obj_property name="ElementShortName">sout13[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout13[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout14" type="array">
+      <obj_property name="ElementShortName">sout14[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout14[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout15" type="array">
+      <obj_property name="ElementShortName">sout15[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout15[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout16" type="array">
+      <obj_property name="ElementShortName">sout16[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout16[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout17" type="array">
+      <obj_property name="ElementShortName">sout17[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout17[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout18" type="array">
+      <obj_property name="ElementShortName">sout18[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout18[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout21" type="array">
+      <obj_property name="ElementShortName">sout21[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout21[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout22" type="array">
+      <obj_property name="ElementShortName">sout22[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout22[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout23" type="array">
+      <obj_property name="ElementShortName">sout23[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout23[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout24" type="array">
+      <obj_property name="ElementShortName">sout24[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout24[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout25" type="array">
+      <obj_property name="ElementShortName">sout25[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout25[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout26" type="array">
+      <obj_property name="ElementShortName">sout26[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout26[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout27" type="array">
+      <obj_property name="ElementShortName">sout27[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout27[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout28" type="array">
+      <obj_property name="ElementShortName">sout28[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout28[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout31" type="array">
+      <obj_property name="ElementShortName">sout31[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout31[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout32" type="array">
+      <obj_property name="ElementShortName">sout32[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout32[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout33" type="array">
+      <obj_property name="ElementShortName">sout33[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout33[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout34" type="array">
+      <obj_property name="ElementShortName">sout34[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout34[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout35" type="array">
+      <obj_property name="ElementShortName">sout35[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout35[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout36" type="array">
+      <obj_property name="ElementShortName">sout36[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout36[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout37" type="array">
+      <obj_property name="ElementShortName">sout37[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout37[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout38" type="array">
+      <obj_property name="ElementShortName">sout38[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout38[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout41" type="array">
+      <obj_property name="ElementShortName">sout41[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout41[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout42" type="array">
+      <obj_property name="ElementShortName">sout42[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout42[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout43" type="array">
+      <obj_property name="ElementShortName">sout43[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout43[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout44" type="array">
+      <obj_property name="ElementShortName">sout44[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout44[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout45" type="array">
+      <obj_property name="ElementShortName">sout45[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout45[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout46" type="array">
+      <obj_property name="ElementShortName">sout46[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout46[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout47" type="array">
+      <obj_property name="ElementShortName">sout47[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout47[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout48" type="array">
+      <obj_property name="ElementShortName">sout48[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout48[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout51" type="array">
+      <obj_property name="ElementShortName">sout51[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout51[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout52" type="array">
+      <obj_property name="ElementShortName">sout52[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout52[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout53" type="array">
+      <obj_property name="ElementShortName">sout53[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout53[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout54" type="array">
+      <obj_property name="ElementShortName">sout54[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout54[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout55" type="array">
+      <obj_property name="ElementShortName">sout55[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout55[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout56" type="array">
+      <obj_property name="ElementShortName">sout56[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout56[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout57" type="array">
+      <obj_property name="ElementShortName">sout57[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout57[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout58" type="array">
+      <obj_property name="ElementShortName">sout58[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout58[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout61" type="array">
+      <obj_property name="ElementShortName">sout61[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout61[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout62" type="array">
+      <obj_property name="ElementShortName">sout62[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout62[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout63" type="array">
+      <obj_property name="ElementShortName">sout63[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout63[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout64" type="array">
+      <obj_property name="ElementShortName">sout64[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout64[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout65" type="array">
+      <obj_property name="ElementShortName">sout65[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout65[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout66" type="array">
+      <obj_property name="ElementShortName">sout66[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout66[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout67" type="array">
+      <obj_property name="ElementShortName">sout67[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout67[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout68" type="array">
+      <obj_property name="ElementShortName">sout68[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout68[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout71" type="array">
+      <obj_property name="ElementShortName">sout71[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout71[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout72" type="array">
+      <obj_property name="ElementShortName">sout72[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout72[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout73" type="array">
+      <obj_property name="ElementShortName">sout73[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout73[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout74" type="array">
+      <obj_property name="ElementShortName">sout74[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout74[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout75" type="array">
+      <obj_property name="ElementShortName">sout75[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout75[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout76" type="array">
+      <obj_property name="ElementShortName">sout76[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout76[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout77" type="array">
+      <obj_property name="ElementShortName">sout77[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout77[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout78" type="array">
+      <obj_property name="ElementShortName">sout78[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout78[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout81" type="array">
+      <obj_property name="ElementShortName">sout81[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout81[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout82" type="array">
+      <obj_property name="ElementShortName">sout82[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout82[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout83" type="array">
+      <obj_property name="ElementShortName">sout83[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout83[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout84" type="array">
+      <obj_property name="ElementShortName">sout84[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout84[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout85" type="array">
+      <obj_property name="ElementShortName">sout85[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout85[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout86" type="array">
+      <obj_property name="ElementShortName">sout86[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout86[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout87" type="array">
+      <obj_property name="ElementShortName">sout87[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout87[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/sout88" type="array">
+      <obj_property name="ElementShortName">sout88[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout88[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit11/ain" type="array">
+      <obj_property name="ElementShortName">ain[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit11/win" type="array">
+      <obj_property name="ElementShortName">win[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit11/sout" type="array">
+      <obj_property name="ElementShortName">sout[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit15/ain" type="array">
+      <obj_property name="ElementShortName">ain[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit15/win" type="array">
+      <obj_property name="ElementShortName">win[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit15/aout" type="array">
+      <obj_property name="ElementShortName">aout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">aout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit15/wout" type="array">
+      <obj_property name="ElementShortName">wout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit15/sout" type="array">
+      <obj_property name="ElementShortName">sout[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit16/ain" type="array">
+      <obj_property name="ElementShortName">ain[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ain[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit16/win" type="array">
+      <obj_property name="ElementShortName">win[7:0]</obj_property>
+      <obj_property name="ObjectShortName">win[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit16/wout" type="array">
+      <obj_property name="ElementShortName">wout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit16/sout" type="array">
+      <obj_property name="ElementShortName">sout[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sout[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit16/a_reg/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mac_array_8x8_tb/DUT/mac_unit16/a_reg/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May  1 20:06:15 2022
+# Process ID: 13796
+# Current directory: C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23548 C:\Users\yvvan\Documents\Research\Approximate Computing\mac_array_8x8\mac_array_8x8.xpr
+# Log file: C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/vivado.log
+# Journal file: C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/mac_array_8x8.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 832.238 ; gain = 148.645
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/mac_array_8x8.srcs/sim_1/new
+file mkdir C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/mac_array_8x8.srcs/sim_1/new
+file mkdir C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/mac_array_8x8.srcs/sim_1/new
+file mkdir C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/mac_array_8x8.srcs/sim_1/new
+file mkdir C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/mac_array_8x8.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/mac_array_8x8.srcs/sim_1/new
+file mkdir {C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/mac_array_8x8.srcs/sim_1/new}
+close [ open {C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/mac_array_8x8.srcs/sim_1/new/mac_array_8x8_tb.v} w ]
+add_files -fileset sim_1 {{C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_8x8/mac_array_8x8.srcs/sim_1/new/mac_array_8x8_tb.v}}
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  2 01:59:47 2022...

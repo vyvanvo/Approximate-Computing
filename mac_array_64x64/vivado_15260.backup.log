@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 17 20:15:37 2022
+# Process ID: 15260
+# Current directory: C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19608 C:\Users\yvvan\OneDrive - email.ucr.edu\Documents\VSCLAB Research\Approximate Computing\mac_array_64x64\mac_array_64x64.xpr
+# Log file: C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/vivado.log
+# Journal file: C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64'
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64.srcs/sim_1/new/mac_array_64x64.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 774.359 ; gain = 147.730
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 17 23:35:55 2022...

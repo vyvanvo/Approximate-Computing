@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 10 01:45:27 2022
+# Process ID: 16288
+# Current directory: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_2x2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17568 C:\Users\yvvan\Documents\VSCLAB Research\Approximate Computing\mac_array_2x2\mac_array_2x2.xpr
+# Log file: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_2x2/vivado.log
+# Journal file: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_2x2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_2x2/mac_array_2x2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 823.484 ; gain = 184.430
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 10 01:46:51 2022...

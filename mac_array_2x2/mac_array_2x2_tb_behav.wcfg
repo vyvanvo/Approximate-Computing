@@ -17,7 +17,7 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="289"></NameColumnWidth>
-      <ValueColumnWidth column_width="263"></ValueColumnWidth>
+      <ValueColumnWidth column_width="239"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="10" />
    <wvobject fp_name="/mac_array_2x2_tb/clk" type="logic">

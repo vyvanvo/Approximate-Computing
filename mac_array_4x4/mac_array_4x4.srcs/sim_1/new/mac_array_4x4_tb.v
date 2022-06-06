@@ -26,14 +26,18 @@ module mac_array_4x4_tb(
     reg clk, rst;
     reg [7:0] ain1, ain2, ain3, ain4; 
     reg [7:0] win1, win2, win3, win4;
+    wire [7:0] aout1, aout2, aout3, aout4; 
+    wire [7:0] wout1, wout2, wout3, wout4;
     wire [16:0] sout11, sout12, sout13, sout14;
     wire [16:0] sout21, sout22, sout23, sout24;
     wire [16:0] sout31, sout32, sout33, sout34;
     wire [16:0] sout41, sout42, sout43, sout44;
     
-    MAC_array_4x4 DUT(.clk(clk), .rst(rst), .ain1(ain1), .ain2(ain2), .ain3(ain3), .ain4(ain4),
+    mac_array_4x4 DUT(.clk(clk), .rst(rst), .ain1(ain1), .ain2(ain2), .ain3(ain3), .ain4(ain4),
                   .win1(win1), .win2(win2), .win3(win3), .win4(win4),
-                  .sout11(sout11), .sout12(sout12), .sout21(sout13), .sout22(sout14),
+                  .aout1(aout1), .aout2(aout2), .aout3(aout3), .aout4(aout4), 
+                  .wout1(wout1), .wout2(wout2), .wout3(wout3), .wout4(wout4),
+                  .sout11(sout11), .sout12(sout12), .sout13(sout13), .sout14(sout14),
                   .sout21(sout21), .sout22(sout22), .sout23(sout23), .sout24(sout24),
                   .sout31(sout31), .sout32(sout32), .sout33(sout33), .sout34(sout34),
                   .sout41(sout41), .sout42(sout42), .sout43(sout43), .sout44(sout44)
@@ -66,9 +70,9 @@ module mac_array_4x4_tb(
         // win41 = 13, win42 = 14, win43 = 15, win44 = 16}
         
         rst = 0;
-        //                                                      0      0      0      win41
-        //                                                      0      0      win31  win42
-        //                                                      0      win21  win32  win43
+        //                                                      0      0      0      win14
+        //                                                      0      0      win13  win24
+        //                                                      0      win12  win23  win34
         //                                                      win11  win22  win33  win44
         //                                                      win21  win32  win43  0
         //                                                      win31  win42  0      0     
@@ -77,28 +81,67 @@ module mac_array_4x4_tb(
         //0      0      ain21  ain22  ain23  ain24  0
         //0      ain31  ain32  ain33  ain34  0      0
         //ain41  ain42  ain43  ain44  0       0     0
-        ain1 = 2; ain2 = 0; ain3 = 0; ain4 = 0;
-        win1 = 3; win2 = 0; win3 = 0; win4 = 0;
+        
+        //ain14 0 0 0
+        //win41 0 0 0
+        ain1 = 4; ain2 = 0; ain3 = 0; ain4 = 0;
+        win1 = 13; win2 = 0; win3 = 0; win4 = 0;
         
         #20
         
-        //ain13 ain24
-        ain1 = 1; ain2 = 4; win1 = 1; win2 = 4;
+        //ain13 ain 24 0 0
+        //win31 win42 0 0
+        ain1 = 3; ain2 = 8; ain3 = 0; ain4 = 0;
+        win1 = 9; win2 = 14; win3 = 0; win4 = 0;
         
         #20
         
-        //0 ain21 0 win12
-        ain1 = 0; ain2 = 3; win1 = 0; win2 = 2;
+        //ain12 ain23 ain43 0
+        //win21 win32 win43 0
+        ain1 = 2; ain2 = 7; ain3 = 12; ain4 = 0;
+        win1 = 5; win2 = 10; win3 = 15; win4 = 0;
         
         #20
         
-        ain1 = 0; ain2 = 0; win1 = 0; win2 = 0;
+        //ain11 ain22 ain33 ain44
+        //win11 win22 win33 win44
+        ain1 = 1; ain2 = 6; ain3 = 11; ain4 = 16;
+        win1 = 1; win2 = 6; win3 = 11; win4 = 16;
         
-        #100
+        #20
+        
+        //0 ain21 ain32 ain43 
+        //0 win12 win23 win34
+        ain1 = 0; ain2 = 5; ain3 = 10; ain4 = 15;
+        win1 = 0; win2 = 2; win3 = 7; win4 = 12;
+        
+        #20
+        
+        //0 0 ain31 ain42 
+        //0 0 win13 win24
+        ain1 = 0; ain2 = 0; ain3 = 9; ain4 = 14;
+        win1 = 0; win2 = 0; win3 = 3; win4 = 8;
+        
+        
+        #20
+        
+        //0 0 0 ain41
+        //0 0 0 win14
+        ain1 = 0; ain2 = 0; ain3 = 0; ain4 = 13;
+        win1 = 0; win2 = 0; win3 = 0; win4 = 4;
+        
+        #20
+        
+        ain1 = 0; ain2 = 0; ain3 = 0; ain4 = 0;
+        win1 = 0; win2 = 0; win3 = 0; win4 = 0;
+        
+        #200
         
         //outputs
-        //{sout11 = 7, sout12 = 10
-        // sout21 = 15, sout22 = 22}
+        //{sout11 = 90, sout12 = 100, sout13 = 110, sout14 = 120
+        // sout21 = 202, sout22 = 228, sout23 = 254, sout24 = 280
+        // sout31 = 314, sout32 = 356, sout33 = 398, sout34 = 440
+        // sout41 = 426, sout42 = 484, sout43 = 542, sout44 = 600}
         
         
         //test 2
@@ -106,106 +149,74 @@ module mac_array_4x4_tb(
         #20
         
         //inputs
-        //{ain11 = 2, ain12 = 4
-        // ain21 = 3, ain22 = 5}
+        // A[] = 4x2
+        //{ain11 = 1, ain12 = 2
+        // ain21 = 3, ain22 = 4
+        // ain31 = 5, ain32 = 6
+        // ain41 = 7, ain42 = 8
         
-        //{win11 = 1, win12 = 1
-        // win21 = 1, win22 = 1}
-        
+        //{win11 = 1, win12 = 2, win13 = 3, win14 = 4,
+        // win21 = 5, win22 = 6, win23 = 7, win24 = 8,
+       
         rst = 0;
-        //ain12 0 win21 0
-        ain1 = 4; ain2 = 0; win1 = 1; win2 = 0;
+       
+        //                                                     
+        //                                                      0      0      0      win14
+        //                                                      0      0      win13  win24
+        //                                                      0      win12  win23  0
+        //                                                      win11  win22  0      0     
+        //                                                      win21  0      0      0
+        //0      0      0      0      0      ain11  ain12 
+        //0      0      0      0      ain21  ain22  0
+        //0      0      0      ain31  ain32  0      0
+        //0      0      ain41  ain42  0      0      0
+       
+        //ain12 0 0 0
+        //win21 0 0 0
+        ain1 = 2; ain2 = 0; ain3 = 0; ain4 = 0;
+        win1 = 5; win2 = 0; win3 = 0; win4 = 0;
         
         #20
         
-        //ain11 ain22 win11 win22
-        ain1 = 2; ain2 = 5; win1 = 1; win2 = 1;
+        //ain11 ain 22 0 0
+        //win11 win22 0 0
+        ain1 = 1; ain2 = 4; ain3 = 0; ain4 = 0;
+        win1 = 1; win2 = 6; win3 = 0; win4 = 0;
         
         #20
         
-        //0 ain21 0 win12
-        ain1 = 0; ain2 = 3; win1 = 0; win2 = 1;
+        //0 ain21 ain32 0
+        //0 win12 win23 0
+        ain1 = 0; ain2 = 3; ain3 = 6; ain4 = 0;
+        win1 = 0; win2 = 2; win3 = 7; win4 = 0;
         
         #20
         
-        ain1 = 0; ain2 = 0; win1 = 0; win2 = 0;
+        //0 0 ain31 ain42
+        //0 0 win13 win24
+        ain1 = 0; ain2 = 0; ain3 = 5; ain4 = 8;
+        win1 = 0; win2 = 0; win3 = 3; win4 = 8;
         
-        #100
+        #20
+        
+        //0 0 0 ain41 
+        //0 0 0 win14
+        ain1 = 0; ain2 = 0; ain3 = 0; ain4 = 7;
+        win1 = 0; win2 = 0; win3 = 0; win4 = 4;
+        
+        #20
+        
+        ain1 = 0; ain2 = 0; ain3 = 0; ain4 = 0;
+        win1 = 0; win2 = 0; win3 = 0; win4 = 0;
+        
+        #200
         
         //outputs
-        //{sout11 = 6, sout12 = 6
-        // sout21 = 8, sout22 = 8}
-        
-        //test 3
-        rst = 1;
-        #20
-        
-        //inputs
-        //{ain11 = 2, ain12 = 4
-        // ain21 = 3, ain22 = 5}
-        
-        //{win11 = 2, win12 = 1
-        // win21 = 1, win22 = 2}
-        
-        rst = 0;
-        //ain12 0 win21 0
-        ain1 = 4; ain2 = 0; win1 = 1; win2 = 0;
-        
-        #20
-        
-        //ain11 ain22 win11 win22
-        ain1 = 2; ain2 = 5; win1 = 2; win2 = 2;
-        
-        #20
-        
-        //0 ain21 0 win12
-        ain1 = 0; ain2 = 3; win1 = 0; win2 = 1;
-        
-        #20
-        
-        ain1 = 0; ain2 = 0; win1 = 0; win2 = 0;
-        
-        #100
-        
-        //outputs
-        //{sout11 = 8, sout12 = 10
-        // sout21 = 11, sout22 = 13}
-        
-        //test 4
-        rst = 1;
-        #20
-        
-        //inputs
-        //{ain11 = 2, ain12 = 4
-        // ain21 = 3, ain22 = 5}
-        
-        //{win11 = 1, win12 = 2
-        // win21 = 3, win22 = 4}
-        
-        rst = 0;
-        //ain12 0 win21 0
-        ain1 = 4; ain2 = 0; win1 = 3; win2 = 0;
-        
-        #20
-        
-        //ain11 ain22 win11 win22
-        ain1 = 2; ain2 = 5; win1 = 1; win2 = 4;
-        
-        #20
-        
-        //0 ain21 0 win12
-        ain1 = 0; ain2 = 3; win1 = 0; win2 = 2;
-        
-        #20
-        
-        ain1 = 0; ain2 = 0; win1 = 0; win2 = 0;
-        
-        #100
-        
-        //outputs
-        //{sout11 = 14, sout12 = 20
-        // sout21 = 18, sout22 = 26}
-        
+        //{sout11 = 11, sout12 = 14, sout13 = 17, sout14 = 20
+        // sout21 = 23, sout22 = 30, sout23 = 37, sout24 = 44
+        // sout31 = 35, sout32 = 46, sout33 = 57, sout34 = 68
+        // sout41 = 47, sout42 = 62, sout43 = 77, sout44 = 92}
+       
         $finish;
     end
     

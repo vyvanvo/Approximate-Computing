@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May  2 16:05:36 2022
+# Process ID: 7776
+# Current directory: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14008 C:\Users\yvvan\Documents\VSCLAB Research\Approximate Computing\mac_array_8x8\mac_array_8x8.xpr
+# Log file: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/vivado.log
+# Journal file: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source mac_array_8x8.tcl
+update_compile_order -fileset sim_1
+close_sim
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+source mac_array_8x8_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}}
+set_property xsim.view {{C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}
+source mac_array_8x8_tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}
+source mac_array_8x8_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}
+source mac_array_8x8_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+launch_simulation
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}
+source mac_array_8x8_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}
+close_sim
+close_design
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}
+source mac_array_8x8_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_8x8/mac_array_8x8_tb_behav.wcfg}
+close_sim

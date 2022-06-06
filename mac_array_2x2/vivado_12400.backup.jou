@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 25 19:51:38 2022
+# Process ID: 12400
+# Current directory: C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_2x2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20840 C:\Users\yvvan\Documents\Research\Approximate Computing\mac_array_2x2\mac_array_2x2.xpr
+# Log file: C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_2x2/vivado.log
+# Journal file: C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_2x2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_2x2/mac_array_2x2.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_2x2/mac_array_2x2_tb_behav.wcfg}
+source mac_array_2x2_tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_2x2/mac_array_2x2_tb_behav.wcfg}
+source mac_array_2x2_tb.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim

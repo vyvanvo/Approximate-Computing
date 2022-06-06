@@ -19,87 +19,27 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module register (clk, rst, write_en, data_in, data_out
-    );
-    
-    parameter WORD_SIZE = 8;
-    input clk;
-    input rst;
-    input write_en;
-    input [WORD_SIZE-1:0] data_in;
-    output reg [WORD_SIZE-1:0] data_out;
-    
-    always @(posedge rst or posedge clk) begin
-        if (rst) begin
-            data_out <= {WORD_SIZE{1'b0} };
-        end else if (clk) begin
-        
-            if (write_en) begin
-                data_out <= data_in;
-            end
-            
-        end
-    
-    end
-    
-endmodule
-
-
-module mac_unit(
-    input clk,
-    input rst,
-    input [7:0] ain, //operand
-    input [7:0] win, //operand
-    output [7:0] aout,
-    output [7:0] wout,
-    output [16:0] sout
-    );
-    
-    wire [15:0] product;
-    wire [16:0] sum;
-    
-    //operand register
-    register a_reg(.clk(clk), .rst(rst), .write_en(clk), .data_in(ain), .data_out(aout)); // a out for the next mac unit in the array
-    register w_reg(.clk(clk), .rst(rst), .write_en(clk), .data_in(win), .data_out(wout)); // w out for the next mac unit in the array 
-    
-    assign product = aout * wout;
-    assign sum = sout + product;
-    
-    //accumulator register
-    register #(.WORD_SIZE(17)) accumulator_reg (.clk(clk), .rst(rst), .write_en(clk), .data_in(sum), .data_out(sout));
-     
-endmodule
-
-
 module mac_array_4x4(
-    input  clk,
-    input rst,
-    input [7:0] ain1,
-    input [7:0] ain2,
-    input [7:0] ain3,
-    input [7:0] ain4,
-    input [7:0] win1,
-    input [7:0] win2,
-    input [7:0] win3,
-    input [7:0] win4,
-    output [16:0] sout11,
-    output [16:0] sout12,
-    output [16:0] sout13,
-    output [16:0] sout14,
-    output [16:0] sout21,
-    output [16:0] sout22,
-    output [16:0] sout23,
-    output [16:0] sout24,
-    output [16:0] sout31,
-    output [16:0] sout32,
-    output [16:0] sout33,
-    output [16:0] sout34,
-    output [16:0] sout41,
-    output [16:0] sout42,
-    output [16:0] sout43,
-    output [16:0] sout44
+    clk, rst,
+    ain1, ain2, ain3, ain4,
+    win1, win2, win3, win4,
+    aout1, aout2, aout3, aout4,
+    wout1, wout2, wout3, wout4,
+    sout11, sout12, sout13, sout14,
+    sout21, sout22, sout23, sout24,
+    sout31, sout32, sout33, sout34,
+    sout41, sout42, sout43, sout44
     ); //4x4 MAC array
+    
+    input  clk, rst;
+    input [7:0] ain1, ain2, ain3, ain4;
+    input [7:0] win1, win2, win3, win4;
+    output [7:0] aout1, aout2, aout3, aout4;
+    output [7:0] wout1, wout2, wout3, wout4;
+    output [16:0] sout11, sout12, sout13, sout14;
+    output [16:0] sout21, sout22, sout23, sout24;
+    output [16:0] sout31, sout32, sout33, sout34;
+    output [16:0] sout41, sout42, sout43, sout44;
     
     wire [7:0] mac_aout11, mac_aout12, mac_aout13, mac_aout14;
     wire [7:0] mac_aout21, mac_aout22, mac_aout23, mac_aout24; 
@@ -135,5 +75,14 @@ module mac_array_4x4(
     mac_unit mac_unit43 (.clk(clk), .rst(rst), .ain(mac_aout42), .win(mac_wout33), .aout(mac_aout43), .wout(mac_wout43), .sout(sout43));
     mac_unit mac_unit44 (.clk(clk), .rst(rst), .ain(mac_aout43), .win(mac_wout34), .aout(mac_aout44), .wout(mac_wout44), .sout(sout44));
     
+    assign aout1 = mac_aout14;
+    assign aout2 = mac_aout24;
+    assign aout3 = mac_aout34;
+    assign aout4 = mac_aout44;
+    
+    assign wout1 = mac_wout41;
+    assign wout2 = mac_wout42;
+    assign wout3 = mac_wout43;
+    assign wout4 = mac_wout44;
+    
 endmodule
-

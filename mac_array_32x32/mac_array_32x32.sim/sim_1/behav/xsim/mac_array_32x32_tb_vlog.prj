@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../mac_array_32x32.srcs/sources_1/new/mac_array_32x32.v" \
+"../../../../mac_array_32x32.srcs/sources_1/new/mac_array_4x4.v" \
+"../../../../mac_array_32x32.srcs/sources_1/new/mac_unit.v" \
+"../../../../mac_array_32x32.srcs/sources_1/new/multiplier.v" \
+"../../../../mac_array_32x32.srcs/sources_1/new/register.v" \
+"../../../../mac_array_32x32.srcs/sim_1/new/mac_array_32x32_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 22 19:02:10 2022
+# Process ID: 15212
+# Current directory: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6400 C:\Users\yvvan\Documents\VSCLAB Research\Approximate Computing\mac_array_64x64\mac_array_64x64.xpr
+# Log file: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/vivado.log
+# Journal file: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64.srcs/sim_1/new/mac_array_64x64.v', nor could it be found using path 'C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64.srcs/sim_1/new/mac_array_64x64.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 807.266 ; gain = 174.773
+update_compile_order -fileset sources_1

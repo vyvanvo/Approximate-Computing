@@ -1,0 +1,217 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May 23 13:47:12 2022
+# Process ID: 1644
+# Current directory: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15236 C:\Users\yvvan\Documents\VSCLAB Research\Approximate Computing\mac_array_64x64\mac_array_64x64.xpr
+# Log file: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/vivado.log
+# Journal file: C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source mac_array_64x64_tb.tcl
+close_sim
+launch_simulation
+source mac_array_64x64_tb.tcl
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}}
+set_property xsim.view {{C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}} [get_filesets sim_1]
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+set_property -name {xsim.simulate.runtime} -value {3000ns} -objects [get_filesets sim_1]
+close_sim
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+close_sim
+launch_simulation
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}}
+set_property xsim.view {{C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg} {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}} [get_filesets sim_1]
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+close_sim
+refresh_design
+launch_simulation
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+close_sim
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+close_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+close_sim
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+close_sim
+refresh_design
+launch_simulation
+open_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+source mac_array_64x64_tb.tcl
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+save_wave_config {C:/Users/yvvan/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64_tb_behav.wcfg}
+close_sim

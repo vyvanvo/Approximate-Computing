@@ -1,0 +1,310 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 25 19:33:05 2022
+# Process ID: 21800
+# Current directory: C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.runs/synth_1
+# Command line: vivado.exe -log mac_array_4x4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac_array_4x4.tcl
+# Log file: C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.runs/synth_1/mac_array_4x4.vds
+# Journal file: C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mac_array_4x4.tcl -notrace
+Command: synth_design -top mac_array_4x4 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2980 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 562.727 ; gain = 184.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mac_array_4x4' [C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.srcs/sources_1/new/mac_array_4x4.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mac_unit' [C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.srcs/sources_1/new/mac_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.srcs/sources_1/new/register.v:23]
+	Parameter WORD_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (1#1) [C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized0' [C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.srcs/sources_1/new/register.v:23]
+	Parameter WORD_SIZE bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized0' (1#1) [C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mac_unit' (2#1) [C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.srcs/sources_1/new/mac_unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mac_array_4x4' (3#1) [C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.srcs/sources_1/new/mac_array_4x4.v:22]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 626.168 ; gain = 247.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 626.168 ; gain = 247.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 626.168 ; gain = 247.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 626.168 ; gain = 247.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 16    
+	                8 Bit    Registers := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module register__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 843.055 ; gain = 464.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 843.055 ; gain = 464.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 843.055 ; gain = 464.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.055 ; gain = 464.555
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.055 ; gain = 464.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.055 ; gain = 464.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.055 ; gain = 464.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.055 ; gain = 464.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.055 ; gain = 464.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   240|
+|3     |LUT2   |   640|
+|4     |LUT3   |    64|
+|5     |LUT4   |   336|
+|6     |LUT5   |    48|
+|7     |LUT6   |   592|
+|8     |FDCE   |   528|
+|9     |IBUF   |    66|
+|10    |OBUF   |   272|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------------------+------+
+|      |Instance            |Module                      |Cells |
++------+--------------------+----------------------------+------+
+|1     |top                 |                            |  2787|
+|2     |  mac_unit11        |mac_unit                    |   153|
+|3     |    a_reg           |register_58                 |    37|
+|4     |    accumulator_reg |register__parameterized0_59 |    21|
+|5     |    w_reg           |register_60                 |    85|
+|6     |  mac_unit12        |mac_unit_0                  |   153|
+|7     |    a_reg           |register_55                 |    37|
+|8     |    accumulator_reg |register__parameterized0_56 |    21|
+|9     |    w_reg           |register_57                 |    85|
+|10    |  mac_unit13        |mac_unit_1                  |   153|
+|11    |    a_reg           |register_52                 |    37|
+|12    |    accumulator_reg |register__parameterized0_53 |    21|
+|13    |    w_reg           |register_54                 |    85|
+|14    |  mac_unit14        |mac_unit_2                  |   153|
+|15    |    a_reg           |register_49                 |    37|
+|16    |    accumulator_reg |register__parameterized0_50 |    21|
+|17    |    w_reg           |register_51                 |    85|
+|18    |  mac_unit21        |mac_unit_3                  |   153|
+|19    |    a_reg           |register_46                 |    37|
+|20    |    accumulator_reg |register__parameterized0_47 |    21|
+|21    |    w_reg           |register_48                 |    85|
+|22    |  mac_unit22        |mac_unit_4                  |   153|
+|23    |    a_reg           |register_43                 |    37|
+|24    |    accumulator_reg |register__parameterized0_44 |    21|
+|25    |    w_reg           |register_45                 |    85|
+|26    |  mac_unit23        |mac_unit_5                  |   153|
+|27    |    a_reg           |register_40                 |    37|
+|28    |    accumulator_reg |register__parameterized0_41 |    21|
+|29    |    w_reg           |register_42                 |    85|
+|30    |  mac_unit24        |mac_unit_6                  |   153|
+|31    |    a_reg           |register_37                 |    37|
+|32    |    accumulator_reg |register__parameterized0_38 |    21|
+|33    |    w_reg           |register_39                 |    85|
+|34    |  mac_unit31        |mac_unit_7                  |   153|
+|35    |    a_reg           |register_34                 |    37|
+|36    |    accumulator_reg |register__parameterized0_35 |    21|
+|37    |    w_reg           |register_36                 |    85|
+|38    |  mac_unit32        |mac_unit_8                  |   153|
+|39    |    a_reg           |register_31                 |    37|
+|40    |    accumulator_reg |register__parameterized0_32 |    21|
+|41    |    w_reg           |register_33                 |    85|
+|42    |  mac_unit33        |mac_unit_9                  |   153|
+|43    |    a_reg           |register_28                 |    37|
+|44    |    accumulator_reg |register__parameterized0_29 |    21|
+|45    |    w_reg           |register_30                 |    85|
+|46    |  mac_unit34        |mac_unit_10                 |   153|
+|47    |    a_reg           |register_25                 |    37|
+|48    |    accumulator_reg |register__parameterized0_26 |    21|
+|49    |    w_reg           |register_27                 |    85|
+|50    |  mac_unit41        |mac_unit_11                 |   153|
+|51    |    a_reg           |register_22                 |    37|
+|52    |    accumulator_reg |register__parameterized0_23 |    21|
+|53    |    w_reg           |register_24                 |    85|
+|54    |  mac_unit42        |mac_unit_12                 |   153|
+|55    |    a_reg           |register_19                 |    37|
+|56    |    accumulator_reg |register__parameterized0_20 |    21|
+|57    |    w_reg           |register_21                 |    85|
+|58    |  mac_unit43        |mac_unit_13                 |   153|
+|59    |    a_reg           |register_16                 |    37|
+|60    |    accumulator_reg |register__parameterized0_17 |    21|
+|61    |    w_reg           |register_18                 |    85|
+|62    |  mac_unit44        |mac_unit_14                 |   153|
+|63    |    a_reg           |register                    |    37|
+|64    |    accumulator_reg |register__parameterized0    |    21|
+|65    |    w_reg           |register_15                 |    85|
++------+--------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.055 ; gain = 464.555
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.055 ; gain = 464.555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.055 ; gain = 464.555
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 240 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 895.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 895.250 ; gain = 540.637
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 895.250 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yvvan/Documents/Research/Approximate Computing/mac_array_4x4/mac_array_4x4.runs/synth_1/mac_array_4x4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mac_array_4x4_utilization_synth.rpt -pb mac_array_4x4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 25 19:33:42 2022...

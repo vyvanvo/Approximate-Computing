@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 19 20:54:32 2022
+# Process ID: 10832
+# Current directory: C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22424 C:\Users\yvvan\OneDrive - email.ucr.edu\Documents\VSCLAB Research\Approximate Computing\mac_array_64x64\mac_array_64x64.xpr
+# Log file: C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/vivado.log
+# Journal file: C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yvvan/OneDrive - email.ucr.edu/Documents/VSCLAB Research/Approximate Computing/mac_array_64x64/mac_array_64x64.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+launch_simulation
+refresh_design
+launch_simulation
+source mac_array_64x64_tb.tcl
+close_sim
